@@ -81,7 +81,7 @@ Mix: 72 a:0x7fff41d5c9c0,b:0x7fff41d5c9d0,c:0x7fff41d5c9de,d:0x7fff41d5c9ec,e:0x
 
 ## 分析
 
-![avatar](Screenshot from 2021-07-01 06-10-25.png)
+![avatar](aligned_test.png)
 
 ### unpacked
 
