@@ -5,6 +5,7 @@
 #include <cstring> //bzero
 #include <chrono>
 #include <cassert>
+#include <fcntl.h>
 using namespace std;
 using namespace std::chrono;
 using Clock = std::chrono::high_resolution_clock;
@@ -28,6 +29,7 @@ int main(int argc, char **argv)
     int err = connect(fd, SOCK_CAST(&servaddr), sizeof(servaddr));
     auto end = Clock::now();
     assert(err == -1);
+
     perror("errno");
     cout << duration_cast<seconds>(end - start).count() << " seconds connection failed." << endl;
     return 0;
